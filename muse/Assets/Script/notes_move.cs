@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class notes_move : MonoBehaviour
 {
-    public setting Setting;
     private float speed;
     // Start is called before the first frame update
     void Start()
     {
-        speed = Setting.speed;
+        speed = setting.speed;
     }
 
     // Update is called once per frame
