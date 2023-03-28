@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class setting : MonoBehaviour
+public static class setting
 {
-    public float speed = 3.0f;
-    public float bpm = 130f;
+    public static float speed = 8.0f;
+    public static float bpm = 130f;
 }
