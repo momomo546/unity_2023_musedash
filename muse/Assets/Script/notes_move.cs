@@ -15,10 +15,5 @@ public class notes_move : MonoBehaviour
     void Update()
     {
         transform.position -= new Vector3(Time.deltaTime * speed,0,0);
-
-        if(transform.position.x <= -6f)
-        {
-            Destroy(this.gameObject);
-        }
     }
 }
