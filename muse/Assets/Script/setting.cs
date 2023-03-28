@@ -6,4 +6,5 @@ public static class setting
 {
     public static float speed = 8.0f;
     public static float bpm = 130f;
+    public static float start_time = 5f;
 }
