@@ -36,32 +36,28 @@ public class button_check : MonoBehaviour
     void Update()
     {
         time+=Time.deltaTime;
-        if (Input.GetKeyDown (KeyCode.D)) {
-            Debug.Log("d");
+        if (Input.GetKeyDown (KeyCode.F)) {
             if(Notes_rabithouse.list_time_r.Count!=0)
             {
             check_up(Notes_rabithouse.list_time_r[0]-time,Notes_rabithouse.list_time_r,Notes_rabithouse.list_object_r);
             }
         }
-        if (Input.GetKeyDown (KeyCode.F)) {
-            Debug.Log("f");
+        if (Input.GetKeyDown (KeyCode.V)) {
             if(Notes_rabithouse.list_time_b.Count!=0)
             {
-            check_up(Notes_rabithouse.list_time_b[0]-time,Notes_rabithouse.list_time_b,Notes_rabithouse.list_object_b);
+            check_down(Notes_rabithouse.list_time_b[0]-time,Notes_rabithouse.list_time_b,Notes_rabithouse.list_object_b);
             }
         }
-        if (Input.GetKeyDown (KeyCode.J)) {
-            Debug.Log("j");
+        if (Input.GetKeyDown (KeyCode.N)) {
             if(Notes_rabithouse.list_time_g.Count!=0)
             {
             check_down(Notes_rabithouse.list_time_g[0]-time,Notes_rabithouse.list_time_g,Notes_rabithouse.list_object_g);
             }
         }
-        if (Input.GetKeyDown (KeyCode.K)) {
-            Debug.Log("k");
+        if (Input.GetKeyDown (KeyCode.J)) {
             if(Notes_rabithouse.list_time_y.Count!=0)
             {
-            check_down(Notes_rabithouse.list_time_y[0]-time,Notes_rabithouse.list_time_y,Notes_rabithouse.list_object_y);
+            check_up(Notes_rabithouse.list_time_y[0]-time,Notes_rabithouse.list_time_y,Notes_rabithouse.list_object_y);
             }
         }
         if(Notes_rabithouse.list_time_r.Count!=0)
@@ -75,7 +71,7 @@ public class button_check : MonoBehaviour
         {
             if(Notes_rabithouse.list_time_b[0]-time<-0.3f)
             {
-                miss_up(Notes_rabithouse.list_time_b,Notes_rabithouse.list_object_b);
+                miss_down(Notes_rabithouse.list_time_b,Notes_rabithouse.list_object_b);
             }
         }
         if(Notes_rabithouse.list_time_g.Count!=0)
@@ -89,7 +85,7 @@ public class button_check : MonoBehaviour
         {
             if(Notes_rabithouse.list_time_y[0]-time<-0.3f)
             {
-                miss_down(Notes_rabithouse.list_time_y,Notes_rabithouse.list_object_y);
+                miss_up(Notes_rabithouse.list_time_y,Notes_rabithouse.list_object_y);
             }
         }
         
