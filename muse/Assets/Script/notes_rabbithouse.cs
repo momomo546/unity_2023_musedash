@@ -9,6 +9,7 @@ public class notes_rabbithouse : MonoBehaviour
     private float quarter_position;
     private float start_time;
     private float position;
+    private int count;
     private GameObject clone;
     private GameObject obj_r;
     private GameObject obj_b;
@@ -35,15 +36,214 @@ public class notes_rabbithouse : MonoBehaviour
         obj_g = (GameObject)Resources.Load ("notes_g");
         obj_y = (GameObject)Resources.Load ("notes_y");
 
-        notes_b(0,0,0,0);
-        notes_r(0,1,0,0);
-        notes_y(0,2,0,0);
-        notes_g(0,3,0,0);
-        notes_three_r(1,0,0,0);
-        notes_three_r(1,0,0,1);
-        notes_three_r(1,0,0,2);
+        notes_r(count,0,0,0);
+        notes_r(count,3,0,0);
+        count++;
+        notes_g(count,0,0,0);
+        notes_b(count,3,0,0);
+        count++;
+        notes_y(count,0,0,0);
+        notes_y(count,3,0,0);
+        count++;
+        notes_r(count,0,0,0);
+        notes_r(count,2,1,0);
+        count++;
+        notes_g(count,0,1,0);
+        //
+        notes_g(count,3,0,0);
+        count++;
+        notes_b(count,0,1,0);
+        //
+        notes_y(count,3,1,0);
+        count++;
+        notes_y(count,0,1,0);
+        notes_r(count,3,1,0);
+        count++;
+        notes_r(count,0,1,0);
+        notes_r(count,3,0,0);
+        count++;
+        
+        notes_r(count,1,0,0);
+        notes_g(count,2,0,0);
+        notes_r(count,3,0,0);
+        count++;
+        notes_g(count,0,0,0);
+        notes_g(count,0,1,0);
+        notes_y(count,1,0,0);
+        notes_b(count,2,0,0);
+        notes_y(count,3,0,0);
+        count++;
+        notes_three_b(count,0,0,0);
+        notes_three_b(count,0,1,0);
+        notes_three_b(count,0,2,0);
+
+        notes_r(count,1,0,0);
+        notes_g(count,2,0,0);
+        notes_r(count,3,0,0);
+        count++;
+        notes_g(count,0,0,0);
+        notes_g(count,0,1,0);
+        notes_y(count,1,0,0);
+        notes_b(count,2,0,0);
+        notes_y(count,3,0,0);
+        count++;
+        notes_three_b(count,0,0,0);
+        notes_three_b(count,0,1,0);
+        notes_three_b(count,0,2,0);
+
+        notes_r(count,1,0,0);
+        notes_g(count,2,0,0);
+        notes_r(count,3,0,0);
+        count++;
+        notes_g(count,0,0,0);
+        notes_g(count,0,1,0);
+        notes_y(count,1,0,0);
+        notes_b(count,2,0,0);
+        notes_y(count,3,0,0);
+        count++;
+        notes_three_b(count,0,0,0);
+        notes_three_b(count,0,1,0);
+        notes_three_b(count,0,2,0);
+
+        notes_r(count,1,0,0);
+        notes_g(count,2,0,0);
+        notes_r(count,3,0,0);
+        count++;
+        notes_g(count,0,0,0);
+        notes_g(count,0,1,0);
+        notes_y(count,1,0,0);
+        notes_b(count,2,0,0);
+        notes_y(count,3,0,0);
+        count++;
+        notes_three_b(count,0,0,0);
+        notes_three_b(count,0,1,0);
+        notes_three_b(count,0,2,0);
+
+        notes_r(count,1,0,0);
+        notes_r(count,2,0,0);
+        count++;
+        notes_g(count,0,0,0);
+        notes_g(count,0,1,0);
+        
+        notes_y(count,1,0,0);
+        notes_y(count,2,0,0);
+        count++;
+        notes_b(count,0,0,0);
+        notes_b(count,0,1,0);
+        
+        notes_r(count,1,1,0);
+        notes_y(count,2,0,0);
+        notes_b(count,2,1,0);
+        notes_g(count,3,0,0);
+        notes_r(count,3,1,0);
+        count++;
+        notes_y(count,0,0,0);
+        notes_b(count,0,1,0);
+        notes_g(count,1,0,0);
+
+        notes_r(count,1,1,0);
+        notes_r(count,2,0,0);
+        notes_r(count,2,1,0);
+        notes_r(count,3,0,0);
+        notes_r(count,3,1,0);
+        
+        count++;
+        notes_r(count,0,0,0);
         
         
+        notes_r(count,2,0,0);
+        notes_y(count,3,0,0);
+        count++;
+        notes_b(count,0,0,0);
+        notes_g(count,1,0,0);
+        
+        notes_b(count,2,0,0);
+        notes_g(count,3,0,0);
+        count++;
+        notes_r(count,0,0,0);
+        notes_y(count,1,0,0);
+
+        notes_r(count,2,0,0);
+        notes_y(count,3,0,0);
+        count++;
+        notes_b(count,0,0,0);
+        notes_g(count,1,0,0);
+        
+        notes_b(count,2,0,0);
+        notes_g(count,3,0,0);
+        count++;
+        notes_r(count,0,0,0);
+        notes_y(count,1,0,0);
+
+        notes_r(count,2,0,0);
+        notes_y(count,3,0,0);
+        count++;
+        notes_b(count,0,0,0);
+        notes_g(count,1,0,0);
+        
+        notes_b(count,2,0,0);
+        notes_g(count,3,0,0);
+        count++;
+        notes_r(count,0,0,0);
+        notes_y(count,1,0,0);
+
+        notes_r(count,2,0,0);
+        notes_y(count,3,0,0);
+        count++;
+        notes_b(count,0,0,0);
+        notes_g(count,1,0,0);
+        
+        notes_b(count,2,0,0);
+        notes_g(count,3,0,0);
+        count++;
+        notes_r(count,0,0,0);
+        notes_y(count,1,0,0);
+
+        notes_r(count,2,0,0);
+        notes_y(count,3,0,0);
+        count++;
+
+        notes_three_g(count,0,0,0);
+        notes_three_g(count,0,1,0);
+        notes_three_g(count,0,2,0);
+
+        notes_y(count,2,0,0);
+        notes_b(count,3,0,0);
+        count++;
+        notes_y(count,0,0,0);
+
+
+
+        notes_r(count,1,0,0);
+        notes_g(count,2,0,0);
+        notes_r(count,3,0,0);
+        count++;
+        notes_g(count,0,0,0);
+        notes_g(count,0,1,0);
+        notes_y(count,1,0,0);
+        notes_b(count,2,0,0);
+        notes_y(count,3,0,0);
+        count++;
+        notes_three_b(count,0,0,0);
+        notes_three_b(count,0,1,0);
+        notes_three_b(count,0,2,0);
+
+        notes_r(count,1,0,0);
+        notes_g(count,2,0,0);
+        notes_r(count,3,0,0);
+        count++;
+        notes_g(count,0,0,0);
+        notes_g(count,0,1,0);
+        notes_y(count,1,0,0);
+        notes_b(count,2,0,0);
+        notes_y(count,3,0,0);
+        count++;
+        notes_three_b(count,0,0,0);
+        notes_three_b(count,0,1,0);
+        notes_three_b(count,0,2,0);
+        count++;
+        
+
     }
 
     void notes_r(float bar, float quarter,float eighth ,float sixteenth)
