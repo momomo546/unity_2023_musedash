@@ -11,9 +11,9 @@ public class Floor_loop : MonoBehaviour
     {
         transform.position -= new Vector3(Time.deltaTime * speed,0,0);
 
-        if(transform.position.x <= -29.98f)
+        if(transform.position.x <= -30f)
         {
-            transform.position = new Vector3(30f,0,0);
+            transform.position = new Vector3(29.98f,0,0);
         }
     }
 }

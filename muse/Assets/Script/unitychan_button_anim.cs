@@ -7,7 +7,7 @@ public class unitychan_button_anim : MonoBehaviour
     private GameObject unitychan;
     private GameObject unitychan_up;
     private GameObject unitychan_down;
-    public float time;
+    private float time;
     private float time_tmp;
     public float change_time = 0.5f;
     // Start is called before the first frame update

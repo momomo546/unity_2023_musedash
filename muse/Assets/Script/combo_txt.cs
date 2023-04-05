@@ -7,16 +7,14 @@ public class combo_txt : MonoBehaviour
 {
     [SerializeField]
     private TextMeshProUGUI comboText;
-    public Score score;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-        comboText.SetText("{0}",score.Combo);
+        comboText.SetText("{0}",Score.Combo);
+        if(Score.Combo>Score.Combo_max)
+        {
+            Score.Combo_max=Score.Combo;
+        }
     }
 }
