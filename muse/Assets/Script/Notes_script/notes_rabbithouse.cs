@@ -506,6 +506,12 @@ public class notes_rabbithouse : MonoBehaviour
         count++;
         count++;
         count++;
+        count++;
+        count++;
+        count++;
+        count++;
+        count++;
+        count++;
         set.notes_r(count,0,0,0);
         set.notes_g(count,1,0,0);
         set.notes_b(count,2,0,0);

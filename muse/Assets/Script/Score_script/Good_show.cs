@@ -10,5 +10,6 @@ public class Good_show : MonoBehaviour
     void Start()
     {
         ScoreText.SetText("Good   :{0}\n",Score.Good);
+        Score.Good=0;
     }
 }

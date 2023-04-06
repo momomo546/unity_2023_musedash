@@ -10,5 +10,6 @@ public class Miss_show : MonoBehaviour
     void Start()
     {
         ScoreText.SetText("Miss   :{0}\n",Score.Miss);
+        Score.Miss=0;
     }
 }

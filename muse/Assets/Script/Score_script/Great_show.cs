@@ -10,5 +10,6 @@ public class Great_show : MonoBehaviour
     void Start()
     {
         ScoreText.SetText("Perfect:{0}\n",Score.Perfect);
+        Score.Perfect=0;
     }
 }
