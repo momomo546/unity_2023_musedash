@@ -9,7 +9,7 @@ public class Game_Scene_change : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
-        if(time > setting.start_time+setting.music_time+2f){
+        if(time > setting.start_time+setting.music_time){
             SceneManager.LoadScene("Clear_Scene");
         }
     }

@@ -10,5 +10,6 @@ public class Combo_show : MonoBehaviour
     void Start()
     {
         ScoreText.SetText("Combo  :{0}\n",Score.Combo_max);
+        Score.Combo_max=0;
     }
 }

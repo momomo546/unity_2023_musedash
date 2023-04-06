@@ -354,6 +354,13 @@ public class notes_Jump_to_Break : MonoBehaviour
         count++;
         count++;
         count++;
+        count++;
+        count++;
+        count++;
+        count++;
+        count++;
+        count++;
+        count++;
         set.notes_r(count,0,0,0);
         set.notes_g(count,1,0,0);
         set.notes_b(count,2,0,0);
