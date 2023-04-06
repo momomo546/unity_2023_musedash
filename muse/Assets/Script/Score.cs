@@ -2,18 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Score : MonoBehaviour
+public static class Score
 {
-    public int score;
-    public int Perfect;
-    public int Great;
-    public int Good;
-    public int Bad;
-    public int Miss;
-    public int Combo;
-    // Update is called once per frame
-    void Update()
-    {
-        score = Perfect*500+Great*300+Good*100+Bad*10;
-    }
+    public static int score = 0;
+    public static int Perfect = 0;
+    public static int Great = 0;
+    public static int Good = 0;
+    public static int Bad = 0;
+    public static int Miss = 0;
+    public static int Combo = 0;
+    public static int Combo_max = 0;
 }
