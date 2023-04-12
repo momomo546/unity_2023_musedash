@@ -7,10 +7,12 @@ public class music_select_main : MonoBehaviour
     [SerializeField] GameObject rabbithouse;
     [SerializeField] GameObject jumptobreak;
     [SerializeField] GameObject Dreaming_Robot;
+    [SerializeField] GameObject test;
     void Awake()
     {
         rabbithouse.SetActive (setting.rabbit_house);
         jumptobreak.SetActive (setting.jump_to_break);
         Dreaming_Robot.SetActive (setting.Dreaming_Robot);
+        test.SetActive (setting.test);
     }
 }

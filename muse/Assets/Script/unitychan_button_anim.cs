@@ -24,16 +24,16 @@ public class unitychan_button_anim : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
-        if (Input.GetKeyDown (KeyCode.F)) {
+        if (Input.GetKey (KeyCode.F)) {
             anim_up();
         }
-        if (Input.GetKeyDown (KeyCode.V)) {
+        if (Input.GetKey (KeyCode.V)) {
             anim_down();
         }
-        if (Input.GetKeyDown (KeyCode.N)) {
+        if (Input.GetKey (KeyCode.N)) {
             anim_down();
         }
-        if (Input.GetKeyDown (KeyCode.J)) {
+        if (Input.GetKey (KeyCode.J)) {
             anim_up();
         }
         if(time-time_tmp>change_time){

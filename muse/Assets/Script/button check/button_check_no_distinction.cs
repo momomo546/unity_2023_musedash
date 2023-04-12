@@ -5,7 +5,6 @@ using UnityEngine;
 public class button_check_no_distinction : MonoBehaviour
 {
     public notes_set set;
-    [SerializeField] private AudioSource SE;
     private GameObject clone;
     private GameObject Perfect_up;
     private GameObject Great_up;
@@ -40,63 +39,79 @@ public class button_check_no_distinction : MonoBehaviour
     {
         time+=Time.deltaTime;
         if (Input.GetKeyDown (KeyCode.F)) {
-            Play_SE();
-            if(set.list_time_r[0]<set.list_time_y[0]){
-                if(set.list_time_r.Count!=0)
-                {
+            if(set.list_time_r.Count!=0){
+                if(set.list_time_y.Count!=0){
+                    if(set.list_time_r[0]<set.list_time_y[0])
+                    {
+                        check_up(set.list_time_r[0]-time,set.list_time_r,set.list_object_r);
+                    }
+                    else{
+                        check_up(set.list_time_y[0]-time,set.list_time_y,set.list_object_y);
+                    }
+                }
+                else{
                     check_up(set.list_time_r[0]-time,set.list_time_r,set.list_object_r);
                 }
             }
-            else{
-                if(set.list_time_y.Count!=0)
-                {
-                    check_up(set.list_time_y[0]-time,set.list_time_y,set.list_object_y);
-                }
+            else if(set.list_time_y.Count!=0){
+                check_up(set.list_time_y[0]-time,set.list_time_y,set.list_object_y);
             }
         }
         if (Input.GetKeyDown (KeyCode.V)) {
-            Play_SE();
-            if(set.list_time_b[0]<set.list_time_g[0]){
-                if(set.list_time_b.Count!=0)
-                {
+            if(set.list_time_b.Count!=0){
+                if(set.list_time_g.Count!=0){
+                    if(set.list_time_b[0]<set.list_time_g[0])
+                    {
+                        check_down(set.list_time_b[0]-time,set.list_time_b,set.list_object_b);
+                    }
+                    else{
+                        check_down(set.list_time_g[0]-time,set.list_time_g,set.list_object_g);
+                    }
+                }
+                else{
                     check_down(set.list_time_b[0]-time,set.list_time_b,set.list_object_b);
                 }
             }
-            else{
-                if(set.list_time_g.Count!=0)
-                {
-                    check_down(set.list_time_g[0]-time,set.list_time_g,set.list_object_g);
-                }
+            else if(set.list_time_g.Count!=0){
+                check_down(set.list_time_g[0]-time,set.list_time_g,set.list_object_g);
             }
         }
         if (Input.GetKeyDown (KeyCode.N)) {
-            Play_SE();
-            if(set.list_time_b[0]>set.list_time_g[0]){
-                if(set.list_time_g.Count!=0)
-                {
+            if(set.list_time_g.Count!=0){
+                if(set.list_time_b.Count!=0){
+                    if(set.list_time_b[0]>set.list_time_g[0])
+                    {
+                        check_down(set.list_time_g[0]-time,set.list_time_g,set.list_object_g);
+                    }
+                    else{
+                        check_down(set.list_time_b[0]-time,set.list_time_b,set.list_object_b);
+                    }
+                }
+                else{
                     check_down(set.list_time_g[0]-time,set.list_time_g,set.list_object_g);
                 }
             }
-            else{
-                if(set.list_time_b.Count!=0)
-                {
-                    check_down(set.list_time_b[0]-time,set.list_time_b,set.list_object_b);
-                }
+            else if(set.list_time_b.Count!=0){
+                check_down(set.list_time_b[0]-time,set.list_time_b,set.list_object_b);
             }
         }
         if (Input.GetKeyDown (KeyCode.J)) {
-            Play_SE();
-            if(set.list_time_y[0]<set.list_time_r[0]){
-                if(set.list_time_y.Count!=0)
-                {
+            if(set.list_time_y.Count!=0){
+                if(set.list_time_r.Count!=0){
+                    if(set.list_time_r[0]>set.list_time_y[0])
+                    {
+                        check_up(set.list_time_y[0]-time,set.list_time_y,set.list_object_y);
+                    }
+                    else{
+                        check_up(set.list_time_r[0]-time,set.list_time_r,set.list_object_r);
+                    }
+                }
+                else{
                     check_up(set.list_time_y[0]-time,set.list_time_y,set.list_object_y);
                 }
             }
-            else{
-                if(set.list_time_r.Count!=0)
-                {
-                    check_up(set.list_time_r[0]-time,set.list_time_r,set.list_object_r);
-                }
+            else if(set.list_time_r.Count!=0){
+                check_up(set.list_time_r[0]-time,set.list_time_r,set.list_object_r);
             }
         }
         if(set.list_time_r.Count!=0)
@@ -212,9 +227,5 @@ public class button_check_no_distinction : MonoBehaviour
         Instantiate(Miss_down, new Vector3( 0,0,0), Quaternion.Euler (new Vector3(90, 180, 0)));
         Score.Miss++;
         Score.Combo=0;
-    }
-    void Play_SE()
-    {
-        SE.Play();
     }
 }

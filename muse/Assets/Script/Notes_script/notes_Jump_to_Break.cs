@@ -160,19 +160,18 @@ public class notes_Jump_to_Break : MonoBehaviour
         set.notes_b(count,2,0,0);
 
         count++;
-        set.notes_b(count,0,0,0);
+        set.notes_long_b(count,0,0,0,count+1,0,0,0);
         count++;
-        set.notes_y(count,0,0,0);
+        set.notes_long_r(count,0,0,0,count+1,0,0,0);
         count++;
-        set.notes_g(count,0,0,0);
+        set.notes_long_g(count,0,0,0,count+1,0,0,0);
         count++;
-        set.notes_r(count,0,0,0);
+        set.notes_long_y(count,0,0,0,count+1,0,0,0);
         count++;
-        set.notes_r(count,0,0,0);
-        set.notes_g(count,0,0,0);
+        set.notes_long_b(count,0,0,0,count+3,0,0,0);
         count++;
-        set.notes_b(count,2,0,0);
-        set.notes_y(count,2,0,0);
+        set.notes_long_r(count,0,2,0,count+2,0,0,0);
+
         count++;
         count++;
         count++;
@@ -350,15 +349,5 @@ public class notes_Jump_to_Break : MonoBehaviour
         count++;
         set.notes_b(count,0,0,0);
         set.notes_y(count,0,0,0);
-
-        count++;
-        count++;
-        count++;
-        set.notes_r(count,0,0,0);
-        set.notes_g(count,1,0,0);
-        set.notes_b(count,2,0,0);
-        set.notes_y(count,3,0,0);
-        
-
     }
 }
